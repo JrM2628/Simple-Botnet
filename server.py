@@ -1,15 +1,10 @@
 from flask import Flask, request
- 
+
 app = Flask(__name__)
  
 @app.route('/')
 def home():
     return "Welcome to Flask!"
-
-
-@app.route('/page1')
-def page1():
-    return "page1"
 
 @app.route('/commands')
 def get_commands():
